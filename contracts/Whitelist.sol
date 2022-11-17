@@ -9,10 +9,10 @@ import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 
 contract Whitelist {
 
-    bytes public merkleRoot;
+    bytes32 public merkleRoot;
 
     constructor(bytes32 _merkleRoot) {
-        merkleRoot = _merkleRoot;
+       merkleRoot = _merkleRoot;
     }
 
     ///@notice This function checks for the max amount of NFT's that a given address can mint
