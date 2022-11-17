@@ -15,8 +15,8 @@ describe("Check if merkle root is working", function() {
     it("Should be able to verify if a given address is in whitelist or not", async function () {
 
         // Get a bunch of test addresses
-        const [owner, addr1, addr2, addr3, addr4, addr5] = 
-            await ethers.getSigner();
+        const [owner, addr1, addr2, addr3, addr4, addr5] =
+        await ethers.getSigners();
 
         // Create an array of elements you wish to encode in the Merkle Tree
         const list = [
